@@ -1,0 +1,19 @@
+body{
+    background-color: #FFF8EA;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Libre Baskerville', serif;
+    color: #5E454B ;
+}
+
+p{
+    color: #594545;
+}
+
+
+header{
+    text-align: center;
+    color: #594545;
+}
