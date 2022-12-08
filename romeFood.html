@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
-        <title>Food Of Rome</title>
-        <link rel="icon" href="images/italyIcon.png">
-        <link rel="stylesheet" href="CSS/main.css">
-    </head>
-    <body>
-        <center>
-            <h1>Rome: Restaurants To Dine In</h1>
-            
-            <nav>
-                <a href="index.html">Home</a>&nbsp;
-                <a href="veniceHistory.html">Venice History</a> &nbsp;
-                <a href="venicePlaces.html">Venice Places</a> &nbsp;
-                <a href="veniceFood.html">Venice Food</a> &nbsp;
-                <a href="RomeHistory.html">Rome History</a> &nbsp;
-                <a href="RomePlaces.html">Rome Places</a> &nbsp;
-                <a href="RomeFood.html">Rome Food</a> &nbsp;
-                <a href="milanHistory.html">Milan History</a> &nbsp;
-                <a href="milanPlaces.html">Milan Places</a> &nbsp;
-                <a href="milanFood.html">Milan Food</a> &nbsp;
-            </nav>
-        </center>
-        <hr>
-        <br>
-        
-        <table>
-            <tr>
-                <th colspan="3">Pro Loco Pinciano</th>
-            </tr>
-            <tr>
-                <th><img src="images/romeFood.jpeg" height="300"></th>
-                <td>Pro Loco Pinciano feels a bit like your stylish Italian friends’ holiday home, all farmhouse brick and stone, with an open deli stacked with cheese and jars of local jam, plus fat prosciutto hams dangling from the ceiling. It's not all for show: when you order a martini, the bartender garnishes it with a prosciutto slice. As for the menu, there’s something to suit every taste here, including crisp pizzas, bowls of pillowy ravioli, and platters of finely sliced cured meats.</td>
-                <td>Price: $$$</td>
-            </tr>
-        
-            <tr>
-                <th colspan="3">La Tavernaccia</th>
-            </tr>
-            <tr>
-                <th><img src="images/romeFood1.jpeg" height="300" width="300"></th>
-                <td>La Tavernaccia is old-school Roman all the way. Start with the misto affettati, a plate of cured meats and cheeses. Next, go for rigatoni all’amatriciana—a mix of chunky pork in tomato sauce, topped with pecorino cheese—then move on to the main event, maialino al forno (suckling pig served with roast potatoes). Wash the entire thing down with a generous helping of house red and a palate-cleansing lemon sorbet.</td>
-                    <td>Price: $$</td>
-            </tr>
 
-            <tr>
-                <th colspan="3">Altrove Ristorante</th>
-            </tr>
-            <tr>
-                <th><img src="images/romeFood2.jpeg" height="300" width="300"></th>
-                <td>Dishes at Altrove, a bright new addition to the largely residential Ostiense district, are inventive, but not overcomplicated. Lunch is a casual, canteen-like affair, with a choice of daily-changing meats, grains and sides. Even vegetarians, normally unlucky in this carnivorous city, will find something to like, with salads, soups, and cheese, plus fresh-from-the-oven breads. Come dinner, the cosmopolitan menu offers creative takes on Roman dishes, such as risotto d’acqua (carnaroli rice cooked in tomato-tinged water with lashings of pecorino cheese and a sprinkling of briny fish roe).                </td>
-                <td>Price:$</td>
-            </tr>
-        </table>
-        <cite>source: bbcgoodfood.com,google.com,wikipida.com</cite>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Food Of Rome</title>
+    <link rel="icon" href="images/italyIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro:wght@300;400&family=Sumana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid lightgrey;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        th {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            color: #3C2317;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rome: Restaurants To Dine In</h1>
+        <div class="navbar">
+            <nav>
+                <div class="spaceLinks">
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Venice
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="veniceHistory.html">History</a>
+                            <a href="venicePlaces.html">Places</a>
+                            <a href="veniceFood.html">Food</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Rome
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="romeHistory.html">History</a>
+                            <a href="romePlaces.html">Places</a>
+                            <a href="romeFood.html">Food</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Milan
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="milanHistory.html">History</a>
+                            <a href="milanplaces.html">Places</a>
+                            <a href="milanFood.html">Food</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="3">Pro Loco Pinciano</th>
+        </tr>
+        <tr>
+            <th><img src="images/romeFood.jpeg" height="300"></th>
+            <td>Pro Loco Pinciano feels a bit like your stylish Italian friends’ holiday home, all farmhouse brick and
+                stone, with an open deli stacked with cheese and jars of local jam, plus fat prosciutto hams dangling
+                from the ceiling. It's not all for show: when you order a martini, the bartender garnishes it with a
+                prosciutto slice. As for the menu, there’s something to suit every taste here, including crisp pizzas,
+                bowls of pillowy ravioli, and platters of finely sliced cured meats.</td>
+            <td>Price: $$$</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">La Tavernaccia</th>
+        </tr>
+        <tr>
+            <th><img src="images/romeFood1.jpeg" height="300" width="300"></th>
+            <td>La Tavernaccia is old-school Roman all the way. Start with the misto affettati, a plate of cured meats
+                and cheeses. Next, go for rigatoni all’amatriciana—a mix of chunky pork in tomato sauce, topped with
+                pecorino cheese—then move on to the main event, maialino al forno (suckling pig served with roast
+                potatoes). Wash the entire thing down with a generous helping of house red and a palate-cleansing lemon
+                sorbet.</td>
+            <td>Price: $$</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Altrove Ristorante</th>
+        </tr>
+        <tr>
+            <th><img src="images/romeFood2.jpeg" height="300" width="300"></th>
+            <td>Dishes at Altrove, a bright new addition to the largely residential Ostiense district, are inventive,
+                but not overcomplicated. Lunch is a casual, canteen-like affair, with a choice of daily-changing meats,
+                grains and sides. Even vegetarians, normally unlucky in this carnivorous city, will find something to
+                like, with salads, soups, and cheese, plus fresh-from-the-oven breads. Come dinner, the cosmopolitan
+                menu offers creative takes on Roman dishes, such as risotto d’acqua (carnaroli rice cooked in
+                tomato-tinged water with lashings of pecorino cheese and a sprinkling of briny fish roe). </td>
+            <td>Price:$</td>
+        </tr>
+    </table>
+    <cite>source: bbcgoodfood.com,google.com,wikipida.com</cite>
+</body>
+
 </html>
