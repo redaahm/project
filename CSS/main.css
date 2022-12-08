@@ -21,10 +21,29 @@ table{
     color: #967E76;
 }
 
+form{
+  color: #3C2317;
+}
+
+label{
+  color: #967E76;
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+cite{
+  color: #3C2317;
+}
 
 
 a{
     text-decoration: none;
+}
+
+.spaceLinks{
+  margin-left: 400px;
 }
 
 /* Navbar container */
@@ -38,9 +57,9 @@ a{
   .navbar a {
     float: left;
     font-size: 20px;
-    color: white;
+    color:  #FFF3E4;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 50px;
     text-decoration: none;
   }
   
@@ -55,8 +74,8 @@ a{
     font-size: 20px;
     border: none;
     outline: none;
-    color: white;
-    padding: 14px 16px;
+    color:  #FFF3E4;
+    padding: 14px 50px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
