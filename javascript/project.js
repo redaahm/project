@@ -25,3 +25,22 @@ function contact(){
     }
 
 }
+
+
+function survey(){
+    if(document.getElementById("purpose").value == '')
+    {
+        document.getElementById("purposeResult").innerHTML ="Textarea is empty, please fill it in";
+    }
+
+    var webS = document.querySelector('#webS');
+    var fb = document.querySelector('#fb');
+    var twt = document.querySelector('#twt');
+    var email = document.querySelector('#emailm');
+
+    if(!webS.checked && !fb.checked && !twt.checked && !email.checked){
+        document.getElementById("checkResult").innerHTML = "Please pick at least one option."
+    }
+
+
+}
