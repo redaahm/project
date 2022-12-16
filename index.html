@@ -210,12 +210,11 @@
         </fieldset>
 
     <br>
-    <form name="feedback" action="https://webdevbasics.net/scripts/demo.php" method="post">
         <fieldset>
             <legend>Survey</legend>
             <p>Complete our survey so we can help you get a better experience!</p>
             <label for="re">Rate Your Experience: </label>
-            <input type="range" id="re" name="exp" min="1" max="5"><br>
+            <input type="range" id="re" name="exp" min="1" max="5">
             <table>
                 <tr>
                     <h3>How did you hear about us?</h3>
@@ -235,12 +234,15 @@
                 <tr>
                     <td><label for="emailm">Email message</label></td>
                     <td><input id="emailm" type="checkbox" name="hearAboutUs" value="emailmsg"></td>
+                    <h2 id="checkResult"></h2>
+
                 </tr>
 
             </table>
             <table>
                 <tr>
                     <h3>What was the purpose of your visit to our website?</h3>
+                    <h2 id="purposeResult"></h2>
                 </tr>
                 <tr>
                     <td><textarea name="prps" id="purpose" cols="50" rows="10"></textarea></td>
@@ -248,10 +250,9 @@
             </table>
 
             <p>Thank you for taking our survey!</p>
-            <input class="button1" type="submit" name="Submit">
+            <input onclick="survey()" class="button1" type="submit" name="Submit">
             <input class="button1" type="reset" name="Reset">
         </fieldset>
-    </form>
     <br>
     <form method="post" name="bookForm" action="https://webdevbasics.net/scripts/demo.php">
         <fieldset>
