@@ -254,27 +254,32 @@
             <input class="button1" type="reset" name="Reset">
         </fieldset>
     <br>
-    <form method="post" name="bookForm" action="https://webdevbasics.net/scripts/demo.php">
+    <form method="post" name="bookForm" action="https://webdevbasics.net/scripts/demo.php" id="myForm">
         <fieldset>
             <legend>Booking Form</legend>
             <p>To reserve a trip to Italy fill out this form.</p>
             <label for="fName">First Name:</label>
-            <input type="text" id="fName" name="fn"> <br>
+            <input type="text" id="fName" name="fn"> 
+            <span id="t1result">*</span><br>
             <label for="lName">last Name:</label>
-            <input type="text" id="lName" name="ln"> <br>
+            <input type="text" id="lName" name="ln"> 
+            <span id="t2result">*</span><br>
             <label for="em">Email:</label>
-            <input type="email" id="em" name="email"> <br>
+            <input type="email" id="em" name="email">
+            <span id="t3result">*</span> <br>
             <label for="phoneNum">Phone Number:</label>
-            <input id="departure" type="text"> <br>
+            <input id="departure1" type="text"> 
+            <span id="t4result">*</span><br>
             <label for="departure">Departure Date/Time:</label>
-            <input type="date" id="departure" name="date">
-            <input type="time" id="departure" name="time"> <br>
+            <input type="date" id="departure2" name="date">
+            <input type="time" id="departure3" name="time">
+            <span id="t5result">*</span>
+            <span id="t6result">*</span> <br>
             <br>
-            <input class="button1" type="submit" name="Submit">
+            <input class="button1" type="button" value="Submit"   onclick="check()">
             <input class="button1" type="reset" name="Reset">
         </fieldset>
     </form>
-
 
 
 

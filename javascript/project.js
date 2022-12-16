@@ -44,3 +44,55 @@ function survey(){
 
 
 }
+
+function check() {
+    var fname = document.getElementById("fName").value;
+    var lname = document.getElementById("lName").value;
+    var email = document.getElementById("em").value;
+    var phn = document.getElementById("departure1").value;
+    var date = document.getElementById("departure2").value;
+    var time = document.getElementById("departure3").value;
+
+    
+    if(fname == ""){
+        document.getElementById("t1result").innerHTML="Please enter first name";
+    }
+    else
+    document.getElementById("t1result").innerHTML="";
+    
+
+    if(lname == ""){
+        document.getElementById("t2result").innerHTML="Please enter last name";
+    }
+    else
+    document.getElementById("t2result").innerHTML="";
+
+    if(email == ""){
+        document.getElementById("t3result").innerHTML="Please enter email";
+    }
+    else
+    document.getElementById("t3result").innerHTML="";
+
+    if(phn == ""){
+        document.getElementById("t4result").innerHTML="Please enter phine number";
+    }
+    else
+    document.getElementById("t4result").innerHTML="";
+
+    if(date == ""){
+        document.getElementById("t5result").innerHTML="Please enter date";
+    }
+    else
+    document.getElementById("t5result").innerHTML="";
+
+    if(time == ""){
+        document.getElementById("t6result").innerHTML="Please enter time";
+    }
+    else
+    document.getElementById("myForm").submit();
+    document.getElementById("t6result").innerHTML="";
+    
+
+
+
+}
