@@ -193,20 +193,22 @@
 
     <br>
     <br><br>
-    <form name="contactInfo" action="https://webdevbasics.net/scripts/demo.php" method="post">
         <fieldset>
             <legend>Contact Information</legend>
             <p>Sign up for updates and news on new trips!</p>
             <label for="flName">Name:</label>
-            <input type="text" id="flName" name="fln"> <br>
+            <input type="text" id="flName" name="fln">
+            <p id="flNameresult"></p>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="em"> <br>
+            <input type="email" id="email" name="em">
+            <p id="emailresult"></p>
             <label for="phoneNum">Phone Number:</label>
-            <input type="text" id="phoneNum" name="num"> <br> <br>
-            <input class="button1" type="submit" name="Submit">
+            <input type="text" id="phoneNum" name="num">
+            <p id="phoneNumresult"></p>
+            <input class="button1" type="submit" name="Submit" onclick="contact()">
             <input class="button1" type="reset" name="Reset">
         </fieldset>
-    </form>
+
     <br>
     <form name="feedback" action="https://webdevbasics.net/scripts/demo.php" method="post">
         <fieldset>
@@ -277,7 +279,7 @@
 
 
 
-
+<script src="javascript/project.js"></script>
 </body>
 
 </html>
